@@ -1,0 +1,7 @@
+hmc5883l.c:12:9:Read8	40	static
+hmc5883l.c:21:6:Write8	32	static
+hmc5883l.c:28:6:HMC5883L_MeasureMode	24	static
+hmc5883l.c:40:6:HMC5883L_DataOutputRate	24	static
+hmc5883l.c:49:6:HMC5883L_SamplesAveraged	24	static
+hmc5883l.c:58:6:HMC5883L_Gain	24	static
+hmc5883l.c:79:11:HMC5883L_Init	32	static
