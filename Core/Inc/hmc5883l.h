@@ -75,7 +75,8 @@
 
 
 
-uint8_t buffer[6];
+//static uint8_t buffer[6];
+//static uint8_t mode;
 
 typedef struct {
 	I2C_HandleTypeDef 			*hmc5883l_i2c;
@@ -87,8 +88,9 @@ typedef struct {
 
 
 uint8_t  HMC5883L_Init(HMC5883L_t *hmc, I2C_HandleTypeDef *i2c, uint8_t Address  ) ;
-void HMC5883L_GainC(HMC5883L_t *hmc , uint8_t Mode);
+void HMC5883L_Gain(HMC5883L_t *hmc , uint8_t Mode);
 void HMC5883L_SamplesAveraged(HMC5883L_t *hmc , uint8_t Mode);
 void HMC5883L_DataOutputRate(HMC5883L_t *hmc , uint8_t Mode);
 void HMC5883L_MeasureMode(HMC5883L_t *hmc , uint8_t Mode);
+uint16_t osx(HMC5883L_t *hmc, I2C_HandleTypeDef *i2c, uint8_t Address  );
 #endif /* INC_HMC5883L_H_ */

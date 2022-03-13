@@ -100,6 +100,8 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+	   osx(&Hmc5883l, &hi2c1, HMC5883L_ADDRESS );
+	   HAL_Delay(200);
   }
   /* USER CODE END 3 */
 }
